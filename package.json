@@ -1,11 +1,11 @@
 {
-  "name": "poke",
-  "version": "1.0.0",
+  "name": "mon",
+  "version": "0.0.2",
   "description": "a pokemon battle simulator",
   "main": "src/index.js",
   "repository": {
     "type": "git",
-    "url": "http://github.com/tybenz/poke"
+    "url": "http://github.com/tybenz/mon"
   },
   "keywords": [
     "pokemon"
@@ -13,9 +13,9 @@
   "author": "Tyler Benziger",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tybenz/poke/issues"
+    "url": "https://github.com/tybenz/mon/issues"
   },
-  "homepage": "https://github.com/tybenz/poke",
+  "homepage": "https://github.com/tybenz/mon",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

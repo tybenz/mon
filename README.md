@@ -1,24 +1,16 @@
 # Mon
 
-A Pokemon battle simulator.
+A Pokemon battle simulator. This is a NodeJS port of the origin
+[mon](https://github.com/qrush/mon/) written by
+[qrush](https://github.com/qrush/).
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'mon'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install mon
+    npm install poke
 
 ## Usage
 
-Check out `Rakefile` for some example usage. This is probably awful and barely works.
+Check out `test.js` for some example usage. This is probably awful and barely works.
 
 ## Contributing
 
