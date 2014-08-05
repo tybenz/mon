@@ -13,7 +13,7 @@ var Battle = Class.extend({
     chooseVisitor: function( name ) {
         var Pokedex = require( './pokedex' );
         this.aiBattle = false;
-        this.visitor = Pokedex.findById( name );
+        this.visitor = Pokedex.findByName( name );
     },
 
     chooseHome: function( name ) {

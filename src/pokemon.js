@@ -19,6 +19,11 @@ var Pokemon = Class.extend({
         this.hp = this.stats.hp();
     },
 
+    setStatsFromObj: function( obj ) {
+        this.stats = Stats.buildFromObj( obj );
+        this.hp = this.stats.hp();
+    },
+
     speed: function() {
         return this.stats.speed();
     },
