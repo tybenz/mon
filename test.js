@@ -1,7 +1,7 @@
-var Battle = require( './src/battle' );
+var Mon = require( './src' );
 var _ = require( 'lodash-node' );
 
-var battle = new Battle();
+var battle = new Mon.Battle();
 battle.chooseHome( 'Charizard' );
 
 while ( battle.battling() ) {
