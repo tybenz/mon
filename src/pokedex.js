@@ -58,6 +58,24 @@ var Pokedex = {
         });
     },
 
+    movesFromNames: function( moveNames ) {
+        var moves = [];
+        for( var i = 0, len = moveNames.length; i < len; i++ ) {
+            var name = moveNames[i ];
+            console.log('TEST',i,name);
+            var row = db.query( 'SELECT * FROM moves WHERE identifier = \'' + name.toLowerCase() + '\';' )[ 0 ];
+            moves.push( new Move( row ) );
+        }
+        return moves;
+        // console.log(moveNames);
+        // return _.map( moveNames, function( wtf ) {
+        //     console.log(wtf);
+        //     var row = db.query( 'SELECT * FROM moves WHERE identifier = \'' + wtf.toLowerCase() + '\';' );
+
+        //     return new Move( row );
+        // });
+    },
+
     statsFor: function( id ) {
         return db.query( 'SELECT * FROM pokemon_stats WHERE pokemon_id = ' + id + ';' );
     },

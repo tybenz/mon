@@ -50,6 +50,11 @@ var Pokemon = Class.extend({
         }).join( ', ' );
     },
 
+    setMoves: function( moveArray ) {
+        this._moves = moveArray;
+        return this._moves;
+    },
+
     findMove: function( name ) {
         return _.find( this._moves, function( move ) {
             return move.name == name.toUpperCase();
