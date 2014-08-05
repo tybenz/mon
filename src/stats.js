@@ -93,4 +93,9 @@ var Stats = Class.extend({
     }
 });
 
+Stats.buildFromObj = function( obj ) {
+    // Use any ID - we override all important values anyways
+    return _.extend( new Stats( 1 ), obj );
+};
+
 module.exports = Stats;
