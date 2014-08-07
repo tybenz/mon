@@ -1,6 +1,6 @@
 {
   "name": "mon",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "a pokemon battle simulator",
   "main": "src/index.js",
   "repository": {

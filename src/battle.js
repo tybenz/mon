@@ -71,15 +71,15 @@ var Battle = Class.extend({
         return moves;
     },
 
-    homeAttack: function() {
-        return this.home.attack( this.homeName, this.visitor );
+    homeAttack: function( name ) {
+        return this.home.attack( name || this.homeName, this.visitor );
     },
 
-    visitorAttack: function() {
+    visitorAttack: function( name ) {
         if ( this.aiBattle ) {
             return this.visitor.counterAttack( this.home );
         } else {
-            return this.visitor.attack( this.visitorName, this.home );
+            return this.visitor.attack( name || this.visitorName, this.home );
         }
     },
 
